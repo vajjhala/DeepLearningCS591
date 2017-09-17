@@ -21,3 +21,13 @@ Conventional pooling (i.e. max pooling ) was used although using other forms giv
 The convolutional model looks like this, with changes to the number of filters.
 
 15 filters (5,5) -> maxpooling -> 512 filters (7,7) -> maxpooling -> dense -> dropout(on training) -> readout.
+
+## CIFAR-10
+
+### Dataset
+The cifar folder and other dependencies are not within this folder, therefore to run it successfully one must download the CIFAR -10 dataset into this folder. 
+
+The data set is available [here] https://www.cs.toronto.edu/~kriz/cifar.html
+### Model
+
+Trial 1, uses a  32 (5,5) -> 32 (7,7) ->  64 (7,7). kernel sequence.
